@@ -6,3 +6,12 @@
     </div>
     {{/if}}
 </script> 
+
+<script type="text/discourse-plugin" version="0.8">
+    api.onPageChange((url, title) => {
+        const login_url = "/session/sso?return_path=";
+        const login_menu_item = $(".customnav-login a");
+
+        login_menu_item.attr("href", login_url + url);
+    });
+</script>

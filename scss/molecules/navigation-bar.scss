@@ -1,0 +1,26 @@
+.nav-pills > li > a {
+    background-color: #fff;
+    border: 1px solid $primary-low;
+    border-bottom: 3px solid $primary-low;
+    border-radius: 2px;
+    box-shadow: $pcb-box-shadow;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li > a.active {
+    color: #fff;
+    background-color: $quaternary;
+    border-color: $quaternary-darker;
+  
+    &:hover {
+        background-color: lighten($quaternary, 5%);
+        color: #fff;
+    }
+}
+
+.nav-pills > li > a:hover {
+    // remove default background on hover
+    color: $quaternary;
+    border-color: $quaternary-darker;
+    border-bottom: 3px solid $quaternary-darker;
+}

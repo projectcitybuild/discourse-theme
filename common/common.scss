@@ -1,0 +1,109 @@
+@import "variables";
+@import "header";
+@import "footer";
+@import "topic";
+@import "base/alert";
+@import "atoms/buttons";
+@import "molecules/navigation-bar";
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Rubik:400,500,700');
+
+body {
+    background-image: url("https://projectcitybuild.com/assets/images/background1.jpg");
+    background-color: #fffcdb;
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+
+    font-family: $base-font-family;
+}
+
+nav#main-nav {
+    border-bottom: 1px solid #362f2b;
+    box-shadow: none;
+    position: relative;
+    z-index: 2000;
+    font-size: 16px;
+    line-height: 14.7167px;
+    box-sizing: border-box;
+}
+
+.extra-info-wrapper .topic-link,
+.fancy-title {
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+}
+
+.spinner {
+    -webkit-animation: pulse 700ms infinite linear;
+    -moz-animation: pulse 700ms infinite linear;
+    -ms-animation: pulse 700ms infinite linear;
+    animation: pulse 700ms infinite linear;
+    width: 64px;
+    height: 64px;
+    border-radius: 0;
+    background-image: url($loader-image);
+    border: none;
+    margin: 50px auto;
+  }
+  
+  @-webkit-keyframes pulse {
+    from {
+      -webkit-transform: scale3d(0.6, 0.6, 0.6);
+    }
+    50% {
+      -webkit-transform: scale3d(1.0, 1.0, 1.0);
+    }
+    to {
+      -webkit-transform: scale3d(0.6, 0.6, 0.6);
+    }
+  }
+  
+  @-moz-keyframes pulse {
+    from {
+      -moz-transform: scale3d(0.6, 0.6, 0.6);
+    }
+    50% {
+      -moz-transform: scale3d(1.0, 1.0, 1.0);
+    }
+    to {
+      -moz-transform: scale3d(0.6, 0.6, 0.6);
+    }
+  }
+  
+  @-o-keyframes pulse {
+    from {
+      -o-transform: scale3d(0.6, 0.6, 0.6);
+    }
+    50% {
+      -o-transform: scale3d(1.0, 1.0, 1.0);
+    }
+    to {
+      -o-transform: scale3d(0.6, 0.6, 0.6);
+    }
+  }
+  
+  @-ms-keyframes pulse {
+    from {
+      -ms-transform: scale3d(0.6, 0.6, 0.6);
+    }
+    50% {
+      -ms-transform: scale3d(1.0, 1.0, 1.0);
+    }
+    to {
+      -ms-transform: scale3d(0.6, 0.6, 0.6);
+    }
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale3d(0.6, 0.6, 0.6);
+    }
+    50% {
+      transform: scale3d(1.0, 1.0, 1.0);
+    }
+    to {
+      transform: scale3d(0.6, 0.6, 0.6);
+    }
+  }

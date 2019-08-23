@@ -1,0 +1,68 @@
+// Default button
+.btn,
+.select-kit.dropdown-select-box .dropdown-select-box-header {
+    border-radius: $pcb-border-radius;
+    border-bottom: 4px solid;
+    background: $primary-low;
+    border-color: darken($primary-low, 5%);
+    
+    .discourse-no-touch & {
+        // only allow hover on no-touch devices
+        &:hover,
+        &.btn-hover {
+            background-color: lighten($primary-low, 5%);
+            border-color: $primary-low;
+            color: $primary-high;
+
+            .d-icon {
+                color: $primary-high;
+            }
+        }
+    }
+}
+
+.btn-primary {
+    background: $tertiary;
+    border-color: #136bae;
+
+    .discourse-no-touch & {
+        // only allow hover on no-touch devices
+        &:hover,
+        &.btn-hover {
+            background-color: #2794e7;
+            border-color: #1887dc;
+
+            color: white;
+
+            .d-icon {
+                color: white;
+            }
+        }
+    }
+}
+
+.btn-danger {
+    background-color: $danger;
+    border-color: darken($danger, 5%);
+
+    .discourse-no-touch & {
+        // only allow hover on no-touch devices
+        &:hover,
+        &.btn-hover {
+            background: lighten($danger, 5%);
+            border-color: $danger;
+
+            color: white;
+
+            .d-icon {
+                color: white;
+            }
+        }
+    }
+}
+
+.d-editor-button-bar .btn,
+.select-kit.dropdown-select-box .dropdown-select-box-header {
+    border: 0;
+    background: none;
+}

@@ -8,6 +8,7 @@
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
+    "loader-image": "assets/crafting-table-loader.png"
   },
   "color_schemes": {
     "New Color Scheme": {
@@ -18,7 +19,7 @@
       "header_background": "ffffff",
       "header_primary": "333333",
       "highlight": "ffff4d",
-      "danger": "b10e1e",
+      "danger": "e45735",
       "success": "218838",
       "love": "fa6c8d"
     }

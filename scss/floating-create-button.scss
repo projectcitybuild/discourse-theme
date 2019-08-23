@@ -1,0 +1,88 @@
+//New Topic Fab
+#create-topic.btn-default {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 63px;
+    height: 63px;
+    border-radius: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: z("composer", "content") - 1;
+    background-color: $tertiary;
+    color: $secondary;
+    white-space: nowrap;
+    overflow: hidden;
+    border-color: #136bae;
+
+    box-shadow: $pcb-box-shadow;
+
+    .d-icon {
+        margin: 0;
+        color: $secondary;
+    }
+    .d-button-label {
+        display: inline-block;
+        transition: all 0.3s;
+        margin: 0 0.25em;
+    }
+    
+    &:not(:hover):not(:active):not(:focus) {
+        .d-button-label {
+            opacity: 0;
+            width: 0;
+            margin: 0;
+        }
+        .d-icon {
+            margin: 0 0.25em;
+        }
+    }
+}
+
+#create-topic.btn-default .fa-plus {
+    color: $secondary;
+}
+
+#create-topic.btn-default:hover {
+    width: 190px;
+}
+
+//Reply Fab
+.timeline-footer-controls {
+    position: relative;
+}
+
+.widget-button.btn.create {
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: -18px;
+    background-color: $tertiary;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    border-color: #136bae;
+    box-shadow: $pcb-box-shadow;
+    .d-icon {
+        color: $secondary;
+    }
+}
+
+//Increase size of reply icon
+.widget-button.btn.create .fa-reply {
+    color: $secondary;
+    font-size: 20px;
+}
+
+//Proper spacing for iPad portrait
+@media only screen and (min-width: 768px) and (max-width: 1250px) {
+    .timeline-container {
+        margin-left: 820px;
+    }
+    .topic-admin-popup-menu {
+        left: -40% !important;
+    }
+}

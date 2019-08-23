@@ -1,0 +1,22 @@
+.d-header {
+    background-color: $pcb-theme;
+    border-bottom: 3px solid #362f2b;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+    color: white;
+}
+
+.d-header-icons .icon:hover {
+    background-color: lighten($pcb-theme, 10%);
+    
+    .d-icon {
+        color: $primary-very-low;
+    }
+}
+
+.d-header-icons .d-icon,
+.extra-info-wrapper .topic-link {
+    color: $primary-very-low;
+}
+.extra-info-wrapper .badge-wrapper .badge-category .category-name {
+    color: $primary-low-mid;
+}

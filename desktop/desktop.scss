@@ -1,0 +1,17 @@
+@import "variables";
+@import "floating-create-button";
+
+#main {
+    padding-top: 112px;
+}
+
+#main-outlet {
+    background-color: #fff;
+    padding: 28px;
+    border-radius: $pcb-border-radius;
+    box-shadow: $pcb-box-shadow;
+
+    background-color: #fff;
+    border-bottom: 3px solid;
+    border-color: #e6e6e6;
+}

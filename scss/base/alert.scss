@@ -1,0 +1,15 @@
+.alert {
+    border-radius: $pcb-border-radius;
+    border-bottom: 3px solid;
+    box-shadow: $pcb-box-shadow;
+    
+    &.alert-success {
+        border-bottom-color: darken($success-low, 5%);
+    }
+    &.alert-error {
+        border-bottom-color: $danger;
+    }
+    &.alert-info {
+        border-bottom-color: darken($tertiary-low, 5%);
+    }
+}

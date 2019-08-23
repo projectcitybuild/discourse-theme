@@ -61,7 +61,8 @@
     }
 }
 
-.d-editor-button-bar .btn {
+.d-editor-button-bar .btn,
+.d-editor-button-bar .select-kit.dropdown-select-box .dropdown-select-box-header {
     border: 0;
     background: none;
 }

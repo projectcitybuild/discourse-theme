@@ -10,7 +10,7 @@
         // only allow hover on no-touch devices
         &:hover,
         &.btn-hover {
-            background-color: lighten($primary-low, 5%);
+            background-color: lighten($primary-low, 2%);
             border-color: $primary-low;
             color: $primary-high;
 

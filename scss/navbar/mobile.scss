@@ -1,0 +1,85 @@
+nav#main-nav {
+    position:initial;
+    background:#534741;
+    border-right:3px solid #362f2b;
+    box-shadow:4px 0 12px 0 rgba(0,0,0,.1);
+    border-bottom: 1px solid #362f2b;
+    overflow-y:auto;
+    overflow-x:hidden;
+    z-index:999;
+    text-align: center;
+}
+nav#main-nav ul {
+    list-style:none;
+    margin:0;
+    padding:0
+}
+nav#main-nav a {
+    font-size:.8em;
+    padding:1em 1.5em;
+    text-decoration:none;
+    text-transform:uppercase;
+    color:#f1f1ea;
+    display:block;
+}
+nav#main-nav .container {
+    padding:0
+}
+nav#main-nav .container>ul>li:not(:last-child) {
+    border-bottom:1px solid #362f2b
+}
+nav#main-nav .container>ul>li:hover {
+    background-color:#61534c
+}
+nav#main-nav .container>ul>li>ul {
+    overflow:hidden;
+    transition-property:max-height,opacity;
+    transition-duration:.5s;
+    transition-timing-function:cubic-bezier(.075,.82,.165,1)
+}
+nav#main-nav .container>ul>li>ul a {
+    border-top:1px solid #3c332f;
+    padding-left:2.5em;
+    color:#98857c
+}
+nav#main-nav .container>ul>li>ul a:hover {
+    background:#534741
+}
+nav#main-nav .container>ul>li>ul h5 {
+    color:#f1f1ea;
+    padding:1em 2em;
+    margin:0;
+    background:#3d3530;
+    font-size:1em
+}
+nav#main-nav .expanded {
+    background:#453b36
+}
+nav#main-nav .nav-dropdown {
+    transition:border .3s cubic-bezier(.075,.82,.165,1)
+}
+nav#main-nav .nav-dropdown [data-fa-i2svg] {
+    transition:-webkit-transform .5s ease-out;
+    transition:transform .5s ease-out;
+    transition:transform .5s ease-out,-webkit-transform .5s ease-out
+}
+nav#main-nav .nav-dropdown.expanded {
+    border-top:2px solid #362f2b
+}
+nav#main-nav .nav-dropdown.expanded [data-fa-i2svg] {
+    -webkit-transform:rotate(0);
+    transform:rotate(0)
+}
+nav#main-nav .nav-dropdown.collapsed {
+    border-top:0 solid #362f2b
+}
+nav#main-nav .nav-dropdown.collapsed [data-fa-i2svg] {
+    -webkit-transform:rotate(450deg);
+    transform:rotate(450deg)
+}
+nav#main-nav ul.expanded {
+    opacity:1
+}
+nav#main-nav ul.collapsed {
+    opacity:0
+}

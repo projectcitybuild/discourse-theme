@@ -24,3 +24,8 @@
     border-color: $quaternary-darker;
     border-bottom: 3px solid $quaternary-darker;
 }
+
+// Fixes for admin page
+.admin-controls .nav-pills > li a.active {
+    background: $quaternary;
+}

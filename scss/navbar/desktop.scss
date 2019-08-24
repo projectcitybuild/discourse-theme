@@ -4,11 +4,9 @@ nav#main-nav {
     background:#534741;
     border-bottom:3px solid #362f2b;
     box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
-    z-index:1000;
 
     border-bottom: 1px solid #362f2b;
     box-shadow: none;
-    z-index: 2000;
     font-size: 16px;
     line-height: 14.7167px;
     box-sizing: border-box;
@@ -27,7 +25,8 @@ nav#main-nav .container {
     justify-content:space-between
 }
 nav#main-nav .container>ul {
-    display:flex
+    display:flex;
+    z-index: 2000;
 }
 nav#main-nav .container>ul>li {
     border-right:1px solid #362f2b

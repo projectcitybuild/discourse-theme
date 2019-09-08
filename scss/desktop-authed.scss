@@ -1,0 +1,9 @@
+body.anon .customnav-account {
+    display: none;
+}
+
+body:not(.anon) {
+    .customnav-login, .menu-panel li a.user-preferences-link {
+        display: none;
+    }
+}

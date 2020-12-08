@@ -1,4 +1,13 @@
+:root {
+    --heading-font-family: "Rubik", Arial, sans-serif;
+}
+
+:root {
+    --font-family: "Rubik", Arial, sans-serif;
+}
+
 $base-font-family: "Rubik", sans-serif;
+$heading-font-family: "Fjalla One", sans-serif;
 $pcb-border-radius: 5px;
 $pcb-box-shadow: 0 2px 5px 1px rgba(0,0,0,.05);
 $pcb-theme: #534741;

@@ -1,8 +1,8 @@
-body.anon .customnav-account {
+html.anon .customnav-account {
     display: none;
 }
 
-body:not(.anon) {
+html:not(.anon) {
     .customnav-login, .menu-panel li a.user-preferences-link {
         display: none;
     }

@@ -9,6 +9,8 @@ nav#main-nav {
     box-shadow: none;
     font-size: 16px;
     line-height: 14.7167px;
+}
+nav#main-nav * {
     box-sizing: border-box;
 }
 nav#main-nav ul {
@@ -25,6 +27,7 @@ nav#main-nav .pcb-nav-container {
     justify-content:space-between;
     margin: 0 auto;
     max-width: 1140px;
+    padding: 0 1em;
 }
 nav#main-nav .pcb-nav-container>ul {
     display:flex;
@@ -88,4 +91,9 @@ nav#main-nav .pcb-nav-container>ul>li>ul.menu-sideway h5 {
     padding:1em 1.5em;
     font-weight:700;
     margin:0
+}
+
+nav#main-nav svg:not(.pcb-nav-icon-rhs) {
+    margin-left: -2.2px;
+    margin-right: -2.2px;
 }

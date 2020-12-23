@@ -19,22 +19,24 @@ nav#main-nav ul {
 nav#main-nav li>ul {
     display:none
 }
-nav#main-nav .container {
+nav#main-nav .pcb-nav-container {
     display:flex;
     flex-direction:row;
-    justify-content:space-between
+    justify-content:space-between;
+    margin: 0 auto;
+    max-width: 1140px;
 }
-nav#main-nav .container>ul {
+nav#main-nav .pcb-nav-container>ul {
     display:flex;
     z-index: 2000;
 }
-nav#main-nav .container>ul>li {
+nav#main-nav .pcb-nav-container>ul>li {
     border-right:1px solid #362f2b
 }
-nav#main-nav .container>ul>li:first-child {
+nav#main-nav .pcb-nav-container>ul>li:first-child {
     border-left:1px solid #362f2b
 }
-nav#main-nav .container>ul a {
+nav#main-nav .pcb-nav-container>ul a {
     display:block;
     font-size:.8em;
     padding:1em 1.5em;
@@ -42,46 +44,46 @@ nav#main-nav .container>ul a {
     text-transform:uppercase;
     color:#fff
 }
-nav#main-nav .container>ul a:active,
-nav#main-nav .container>ul a:focus {
+nav#main-nav .pcb-nav-container>ul a:active,
+nav#main-nav .pcb-nav-container>ul a:focus {
     background:#362f2b
 }
-nav#main-nav .container>ul>li:hover {
+nav#main-nav .pcb-nav-container>ul>li:hover {
     background-color:#61534c
 }
-nav#main-nav .container>ul>li:hover ul {
+nav#main-nav .pcb-nav-container>ul>li:hover ul {
     display:inherit
 }
-nav#main-nav .container>ul>li:hover ul.menu-sideway {
+nav#main-nav .pcb-nav-container>ul>li:hover ul.menu-sideway {
     display:flex
 }
-nav#main-nav .container>ul>li>ul {
+nav#main-nav .pcb-nav-container>ul>li>ul {
     background:#fff;
     position:absolute;
     border:solid #dfeffb;
     border-width:1px 1px 3px
 }
-nav#main-nav .container>ul>li>ul .divider {
+nav#main-nav .pcb-nav-container>ul>li>ul .divider {
     border-bottom:1px solid #dfeffb
 }
-nav#main-nav .container>ul>li>ul a {
+nav#main-nav .pcb-nav-container>ul>li>ul a {
     color:#1887dc;
     padding:1em 1.5em
 }
-nav#main-nav .container>ul>li>ul a:hover {
+nav#main-nav .pcb-nav-container>ul>li>ul a:hover {
     background-color:#f6f6f6
 }
-nav#main-nav .container>ul>li>ul a:active,
-nav#main-nav .container>ul>li>ul a:focus {
+nav#main-nav .pcb-nav-container>ul>li>ul a:active,
+nav#main-nav .pcb-nav-container>ul>li>ul a:focus {
     background-color:#e9e9e9
 }
-nav#main-nav .container>ul>li>ul.menu-sideway {
+nav#main-nav .pcb-nav-container>ul>li>ul.menu-sideway {
     flex-direction:row
 }
-nav#main-nav .container>ul>li>ul.menu-sideway>li:not(:last-child) {
+nav#main-nav .pcb-nav-container>ul>li>ul.menu-sideway>li:not(:last-child) {
     border-right:1px solid #dfeffb
 }
-nav#main-nav .container>ul>li>ul.menu-sideway h5 {
+nav#main-nav .pcb-nav-container>ul>li>ul.menu-sideway h5 {
     text-transform:uppercase;
     padding:1em 1.5em;
     font-weight:700;

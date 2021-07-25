@@ -34,3 +34,8 @@ body {
 .d-toc-regular .d-toc-anchor-link {
     display: none;
 }
+
+// fixes icon colours in flair chooser
+.flair-chooser .avatar-flair svg {
+    color: unset;
+}
